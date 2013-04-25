@@ -16,6 +16,8 @@ typedef sector_t head_t[NUM_OF_SECTS];
 typedef head_t cylinder_t[NUM_OF_HEADS];
 typedef cylinder_t disk_t[NUM_OF_CYLS];
 
+char* disks[NUM_OF_HEADS*NUM_OF_CYLS*NUM_OF_SECTS*SECT_SIZE];
+
 typedef struct
 {
   int cyl;

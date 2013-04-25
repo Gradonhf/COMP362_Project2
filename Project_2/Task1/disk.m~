@@ -1,0 +1,19 @@
+/* 
+ * File:   disk.c
+ * Author: admin
+ *
+ * Created on April 24, 2013, 5:07 PM
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "disk.h"
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
+    return (EXIT_SUCCESS);
+}
+
+

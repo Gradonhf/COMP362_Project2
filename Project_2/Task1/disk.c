@@ -50,7 +50,7 @@ int read(int logical_block_num, int num_of_sectors, void **buffer)
     physaddr_t *phaddr = malloc(sizeof(physaddr_t));
     if(log_to_phys(logical_block_num,phaddr)==1)
     {
-    printf("");
+    //printf("");
         for(i=0; i<num_of_sectors; i++)
         {
             //memcpy(*buffer[i],disks[(phaddr->cyl)*(phaddr->head)*(phaddr->sect)],num_of_sectors);
@@ -75,11 +75,11 @@ int write(int logical_block_num, int num_of_sectors, void *buffer)
             //memcpy(disks[(phaddr->cyl)*(phaddr->head)+phaddr->sect],*buffer[i],1);
         }
         memcpy(disks+((phaddr->cyl)*(phaddr->head)+(phaddr->sect)),buffer,num_of_sectors);
-        printf("write after the For loop\n");
+        //printf("write after the For loop\n");
         return 1;
     }
 
-    printf("write after the if loop\n");
+    //printf("write after the if loop\n");
     return 0;
 }
 
@@ -87,7 +87,7 @@ int main(int argc, char** argv) {
 
     int logaddr = 123;
     int test;
-    char *str;
+    char *str = "Hello";
     printf("Test logical to physical %d\n",logaddr);
     physaddr_t *phaddr = malloc(sizeof(physaddr_t));
     test =log_to_phys(logaddr,phaddr);

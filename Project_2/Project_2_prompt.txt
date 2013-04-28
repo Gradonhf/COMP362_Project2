@@ -7,7 +7,7 @@ HINT: First, test the translation in a while loop that generates a random logica
 NOTE: Of course, you need to allocate the disk space for that, as there is none in the h file! Do it statically or dynamically, but keep in mind that if you do it dynamically, then you will have to adjust the memory allocation when you compile the simulator into a Linux kernel module.
 
 
-
+s
 
 
 
